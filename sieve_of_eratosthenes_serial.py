@@ -22,7 +22,7 @@ if __name__ == "__main__":
     start = time.time()
     limit = 100_000_000
     if sys.argv.__len__() > 1:
-        limit = sys.argv[1]
+        limit = int(sys.argv[1])
     print("limit: " + str(limit))
     SieveOfEratosthenes(limit)
     end = time.time()
